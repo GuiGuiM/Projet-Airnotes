@@ -69,23 +69,8 @@ class HeaderWidget(QWidget):
         searchBar.setPlaceholderText("Search Tool")
         searchBar.addAction(QIcon("searchIcon.png"), searchBar.ActionPosition(1))
         searchBar.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
-
         headingMenu.addWidget(searchBar)
-        
-        
-        """
-        labelCours = QLabel("nb cours :")
-        labelNotes = QLabel("nb notes :")
-        miniStat = QVBoxLayout()
-        miniStat.addWidget(labelCours)
-        miniStat.addWidget(labelNotes)
-        self.headingMenu.addLayout(miniStat)
-        """
-        # addNote
-        #
-        # searchBar
-        
-        
+
 def main(args):
     app = QApplication(args)
     window = HeaderWidget()
