@@ -22,7 +22,11 @@ class NoteLabel(QLabel):
     def mousePressEvent(self, event):
 
         drag = QDrag(self)
+        painter = QPainter()
         pix_map = QPixmap()
+        width = QFon
+        painter.begin(pix_map)
+
         mime_data = QMimeData()
         mime_data.setHtml(self.texte)
         drag.setMimeData(mime_data)
