@@ -69,8 +69,8 @@ class EditorWidget(QWidget):
 
         vlayout = QVBoxLayout()
         grid.addLayout(vlayout, 0, 1)
-        note1 = NoteLabel("Title1", "blabla")
-        note2 = NoteLabel("Title2", "<b>blabla</b>")
+        note1 = NoteLabel("Sophie", "blabla")
+        note2 = NoteLabel("Arthur", "<b>blabla</b>")
         vlayout.addWidget(note1)
         vlayout.addWidget(note2)
 
@@ -81,4 +81,4 @@ if __name__ == "__main__":
 
     app = QApplication(sys.argv)
     editor = EditorWidget()
-app.exec_()
+    app.exec_()
